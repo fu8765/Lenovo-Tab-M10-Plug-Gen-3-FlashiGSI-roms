@@ -37,15 +37,27 @@ extract img file from zip
 copy img file to your ADB & Fastboot folder (unless they're set up in your PATH)
 
 
-4) Reboot and flash your new GSI
+(4) Reboot and flash your new GSI
+
 Open a command line from your folder holding adb, fastboot, and the img, and issue the following commands
+
+
   a) adb reboot bootloader (this will reboot your tablet to the bootloader)
+    
   b) fastboot flashing unlock (you'll need to press the volume up button twice to accept, read the instructions on the tablet screen *** THIS WILL DELETE ALL YOUR DATA ***
+  
   c) fastboot reboot fastboot ( will reboot the tablet back into fastboot)
+  
   d) fastboot getvar all (read output and ensure there is a "current-slot: a)
+  
   e) fastboot delete-logical-partition product_a then fastboot delete-logical-partition product_b (this will clear both slots)
+  
   f) fastboot flash system XXXX.img (replace XXXX.img for whatever the name of your img file is)
  
  
  Enjoy
+ 
+ What Roms are working
+ 
+ Pixel Experience GSI by ponces - NO - Locks during setup at Face unlock step, seems no way to bypass - https://github.com/ponces/treble_build_pe/
   
