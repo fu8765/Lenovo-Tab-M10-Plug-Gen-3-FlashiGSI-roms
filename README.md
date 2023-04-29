@@ -60,4 +60,6 @@ Open a command line from your folder holding adb, fastboot, and the img, and iss
  What Roms are working
  
  Pixel Experience GSI by ponces - NO - Locks during setup at Face unlock step, seems no way to bypass - https://github.com/ponces/treble_build_pe/
+ 
+ Project Elixir by KrutosX & Lynix - Seems to work well, haven't found any bugs yet - https://projectelixiros.com/download
   
