@@ -48,11 +48,13 @@ Open a command line from your folder holding adb, fastboot, and the img, and iss
   
   c) fastboot reboot fastboot ( will reboot the tablet back into fastboot)
   
-  d) fastboot getvar all (read output and ensure there is a "current-slot: a)
+  d) fastboot flash --disable-verity --disable-verification vbmeta vbmeta.img
   
-  e) fastboot delete-logical-partition product_a then fastboot delete-logical-partition product_b (this will clear both slots)
+  e) fastboot getvar all (read output and ensure there is a "current-slot: a)
   
-  f) fastboot flash system XXXX.img (replace XXXX.img for whatever the name of your img file is)
+  f) fastboot delete-logical-partition product_a then fastboot delete-logical-partition product_b (this will clear both slots)
+  
+  g) fastboot flash system XXXX.img (replace XXXX.img for whatever the name of your img file is)
  
  
  Enjoy
